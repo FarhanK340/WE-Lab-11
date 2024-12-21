@@ -1,0 +1,111 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --color-primary: #082A40;
+    --color-secondary: #8DC641;
+    --color-text: #595959;
+    --color-accent: #FAA71C;
+    overflow-y: scroll;   
+}
+
+body::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+
+.fa-phone-alt::before {
+    content: "\f879";
+}
+
+.fa-envelope::before {
+    content: "\f0e0";
+}
+
+header {
+    background: var(--color-secondary);
+    width: 100%;
+    height: 5vh;
+    align-content: center;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul .contacts{
+    display: flex;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+li a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.signed-in{
+    color: white;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    cursor:default;
+}
+
+.signed-in:hover{
+    background: var(--color-primary);
+    cursor: default;
+}
+
+.logout{
+    background: var(--color-secondary);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+main {
+    z-index: 0;
+    position: relative;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+}
+
+footer p{
+    padding: 10px;
+    margin: 0;
+}
+
+footer a {
+    color: var(--color-secondary);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
